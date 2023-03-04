@@ -14,7 +14,13 @@ public class MoveTo : MonoBehaviour
     private TrafficLightsHandler TLH;
 
     private float InitSpeed;
+    private float oldTransX = 0;
+    private float oldTransY = 0;
 
+    public Camera cam;
+    public SpriteRenderer spriteRenderer;
+    public Rigidbody rb;
+    public Animator animator;
 
     void Start()
     {
@@ -57,11 +63,30 @@ public class MoveTo : MonoBehaviour
                 agent.isStopped = true;
                 agent.speed = InitSpeed;
             }
-
-             
-               
+    
             
         }
+        this.transform.LookAt(cam.transform);
+
+        if (oldTransX > this.transform.position.x)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (oldTransX < this.transform.position.x)
+        {
+            spriteRenderer.flipX = true;
+        }
+
+
+
+
+
+        float PNJVelocity = Mathf.Abs(oldTransX - this.transform.position.x) + Mathf.Abs(oldTransY - this.transform.position.y);
+        Debug.Log(PNJVelocity);
+        animator.SetFloat("speed", PNJVelocity);
+
+        oldTransX = this.transform.position.x;
+        oldTransY = this.transform.position.y;
     }
 
 
@@ -99,9 +124,10 @@ public class MoveTo : MonoBehaviour
                 return GameObject.Find("Zone (3)");
             }
         }
-
+        
 
     }
+    
 
 
 }

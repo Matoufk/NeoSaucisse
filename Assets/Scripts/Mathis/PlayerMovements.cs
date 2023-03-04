@@ -9,13 +9,20 @@ public class PlayerMovements : MonoBehaviour
     public Rigidbody rb;
     private Vector3 velocity = Vector3.zero;
 
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
+
+
     void FixedUpdate()
     {
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         float depthMovement = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         Vector3 deplacement = new Vector3(horizontalMovement, 0, depthMovement);
-        
+
+        Flip(rb.velocity.x);
         MovePlayer(deplacement);
+        float PPVelocity = Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.z);
+        animator.SetFloat("speed", PPVelocity);
        
     }
 
@@ -24,5 +31,18 @@ public class PlayerMovements : MonoBehaviour
         Vector3 targetVelocity = _movement;
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, .05f);
  
+    }
+
+    void Flip(float _velocity)
+    {
+        if (_velocity > 0.1f)
+        {
+            spriteRenderer.flipX = false;
+        }
+
+        else if (_velocity < -0.1f)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 }
