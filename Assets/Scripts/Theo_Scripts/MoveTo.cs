@@ -25,7 +25,7 @@ public class MoveTo : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Start");
+        //Debug.Log("Start");
         agent = GetComponent<NavMeshAgent>();
 
         NPC = GameObject.Find("PNJ");

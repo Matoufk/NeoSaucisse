@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: f731d0caa90651e4995c29501a5cac8c, type: 2}
 --- !u!4 &12267950 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1791011349553626555, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
@@ -1793,6 +1793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrafficLight (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6227130366779071845, guid: ac9f827711618ed49bfddc09fba45b7a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ab6a02f3a7ce5440a5d9084a46cc5ea, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac9f827711618ed49bfddc09fba45b7a, type: 3}
 --- !u!1001 &165361362
@@ -12772,6 +12776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrafficLight
       objectReference: {fileID: 0}
+    - target: {fileID: 6227130366779071845, guid: ac9f827711618ed49bfddc09fba45b7a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ab6a02f3a7ce5440a5d9084a46cc5ea, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac9f827711618ed49bfddc09fba45b7a, type: 3}
 --- !u!4 &855685981 stripped
@@ -24547,7 +24555,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &2089669099
 BoxCollider:
