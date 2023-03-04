@@ -16,7 +16,7 @@ public class pedestrianLightChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        NPC = GameObject.Find("NPC");
+        NPC = GameObject.Find("PNJ");
         TFH = NPC.GetComponent<TrafficLightsHandler>();
 
         //We initiate at red light

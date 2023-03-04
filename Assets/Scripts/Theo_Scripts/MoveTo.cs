@@ -98,7 +98,7 @@ public class MoveTo : MonoBehaviour
 
     private GameObject GiveNewDestination()
     {
-        if(transform.position.x < 0)
+        if(transform.position.x < -19)
         {
             float val = Random.value;
             if(val < 0.3)
