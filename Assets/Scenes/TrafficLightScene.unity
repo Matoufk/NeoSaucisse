@@ -1224,7 +1224,7 @@ GameObject:
   - component: {fileID: 2015287432}
   m_Layer: 6
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: pedestrianLight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1397,9 +1397,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1791011348571184706, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
+      propertyPath: m_TagString
+      value: pedestrianLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791011348617953347, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
+      propertyPath: m_TagString
+      value: pedestrianLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791011348624972967, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
+      propertyPath: m_TagString
+      value: pedestrianLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791011348759782427, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
+      propertyPath: m_TagString
+      value: pedestrianLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791011348877936428, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
+      propertyPath: m_TagString
+      value: pedestrianLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791011349406585386, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
+      propertyPath: m_TagString
+      value: pedestrianLight
+      objectReference: {fileID: 0}
     - target: {fileID: 1791011349408771890, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
       propertyPath: m_Name
       value: Crossing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791011349408771890, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
+      propertyPath: m_TagString
+      value: pedestrianLight
       objectReference: {fileID: 0}
     - target: {fileID: 1791011349408771891, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
       propertyPath: m_RootOrder
@@ -1445,6 +1473,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1791011349902564480, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
+      propertyPath: m_TagString
+      value: pedestrianLight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
 --- !u!1001 &6227130365887625977
@@ -1454,6 +1486,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6227130365623633346, guid: ac9f827711618ed49bfddc09fba45b7a, type: 3}
+      propertyPath: m_TagString
+      value: pedestrianLight
+      objectReference: {fileID: 0}
     - target: {fileID: 6227130366742639968, guid: ac9f827711618ed49bfddc09fba45b7a, type: 3}
       propertyPath: m_RootOrder
       value: 5
