@@ -463,6 +463,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1727811290}
+    - target: {fileID: 6697119707734450105, guid: ae17d67a19930cd4f8a652f92b2cc468, type: 3}
+      propertyPath: xOffSet
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6697119707734450109, guid: ae17d67a19930cd4f8a652f92b2cc468, type: 3}
       propertyPath: m_Name
       value: Main Camera
