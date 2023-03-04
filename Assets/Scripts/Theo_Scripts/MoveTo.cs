@@ -46,7 +46,7 @@ public class MoveTo : MonoBehaviour
         if (TLH.GetLight() == false)
         {
 
-            if(gameObject.transform.position.x < 2.5 && gameObject.transform.position.x > -2.5)
+            if(gameObject.transform.position.x > -24 && gameObject.transform.position.x < -14)
             {
                 //il est sur la route
                 agent.isStopped = false;
@@ -67,7 +67,7 @@ public class MoveTo : MonoBehaviour
 
     private GameObject GiveNewDestination()
     {
-        if(transform.position.x < 0)
+        if(transform.position.x < -19)
         {
             float val = Random.value;
             if(val < 0.3)

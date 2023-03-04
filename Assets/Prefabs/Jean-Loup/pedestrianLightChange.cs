@@ -8,10 +8,33 @@ public class pedestrianLightChange : MonoBehaviour
     public Material pedSymbolRedMat;
     public Material pedSymbolBlueMat;
 
+    private GameObject NPC;
+    private TrafficLightsHandler TFH;
+
+    private bool isGreen = false; //True if pedestrian can cross. False otherwise.
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        NPC = GameObject.Find("NPC");
+        TFH = NPC.GetComponent<TrafficLightsHandler>();
+
+        //We initiate at red light
+        Material mymat = GetComponent<Renderer>().sharedMaterial;
+        Color c = mymat.GetColor("_EmissionColor");
+
+
+        //Change pedestrian symbol panel colour
+        //if it used to be red (and was just changed to blue)
+        if (c[0] < c[2])
+        {
+            //Change bloom colour to red
+            mymat.SetColor("_EmissionColor", new Color(c[2], c[1], c[0], c[3]));
+            foreach (GameObject go in GameObject.FindGameObjectsWithTag("PedestrianSymbol"))
+            {
+                go.GetComponent<MeshRenderer>().material = pedSymbolRedMat;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -19,7 +42,7 @@ public class pedestrianLightChange : MonoBehaviour
     {
         Material mymat = GetComponent<Renderer>().sharedMaterial;
         Color c = mymat.GetColor("_EmissionColor");
-        if (Random.Range(0f,1f)<0.01f)   //HasLightChanged())
+        if (HasLightChanged())
         {
             //Change bloom colour
             mymat.SetColor("_EmissionColor", new Color(c[2], c[1], c[0], c[3]));
@@ -48,7 +71,13 @@ public class pedestrianLightChange : MonoBehaviour
     /// </summary>
     /// <returns>Returns true if the light changed. False otherwise.</returns>
     bool HasLightChanged(){
-        
-        return true;
+
+        if (TFH.GetLight() != isGreen)
+        {
+            isGreen = !isGreen;
+            return true;
+
+        }
+        return false;
     }
 }
