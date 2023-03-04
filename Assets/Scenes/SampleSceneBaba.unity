@@ -4823,6 +4823,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 467787817}
+  - component: {fileID: 467787818}
   m_Layer: 0
   m_Name: PNJ
   m_TagString: Untagged
@@ -4855,6 +4856,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &467787818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467787816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac5fd391e0cafb46a54941cc91f5d05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  green: 0
 --- !u!1001 &483047464
 PrefabInstance:
   m_ObjectHideFlags: 0

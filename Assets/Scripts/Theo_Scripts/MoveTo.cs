@@ -70,11 +70,11 @@ public class MoveTo : MonoBehaviour
         }
         this.transform.LookAt(cam.transform);
 
-        if (oldTransX > this.transform.position.x + 0.04)
+        if (oldTransX > this.transform.position.x + 0.02)
         {
             spriteRenderer.flipX = false;
         }
-        else if (oldTransX < this.transform.position.x - 0.04)
+        else if (oldTransX < this.transform.position.x - 0.02)
         {
             spriteRenderer.flipX = true;
         }
@@ -88,7 +88,7 @@ public class MoveTo : MonoBehaviour
         {
             PNJVelocity = 1;
         }
-        Debug.Log(PNJVelocity);
+        //Debug.Log(PNJVelocity);
         animator.SetFloat("speed", PNJVelocity);
 
         oldTransX = this.transform.position.x;
