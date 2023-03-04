@@ -8,6 +8,11 @@ TagManager:
   - PedestrianSymbol
   - NPC
   - InteractUI
+  - Eau
+  - Fleur
+  - Regle
+  - Colle
+  - Affiche
   layers:
   - Default
   - TransparentFX

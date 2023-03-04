@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4132340080697852830}
   - component: {fileID: 4132340080697852829}
+  - component: {fileID: 7879364524123675627}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -47,3 +48,20 @@ MonoBehaviour:
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
   animator: {fileID: 0}
+--- !u!114 &7879364524123675627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132340080697852828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a446005568c24a047b55fc27b0ccc67d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Eau: 0
+  Fleur: 0
+  Regle: 0
+  Colle: 0
+  Affiche: 0
