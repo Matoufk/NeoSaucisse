@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 3367750928744051934}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,6 +247,7 @@ MonoBehaviour:
   creditText: {fileID: 0}
   socialCredit: 100
   mainCamera: {fileID: 0}
+  BREAK: 0
 --- !u!1 &8935343487950090300
 GameObject:
   m_ObjectHideFlags: 0
