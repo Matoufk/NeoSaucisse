@@ -244,9 +244,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52f3cda0c98898488fd12ba956db40f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creditText: {fileID: 0}
+  creditText: {fileID: 7557264636690138521}
   socialCredit: 100
   mainCamera: {fileID: 0}
+  BREAK: 0
 --- !u!1 &8935343487950090300
 GameObject:
   m_ObjectHideFlags: 0
