@@ -21,12 +21,14 @@ public class MoveTo : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Rigidbody rb;
     public Animator animator;
+    private float PNJVelocity = 0;
 
     void Start()
     {
+        Debug.Log("Start");
         agent = GetComponent<NavMeshAgent>();
 
-        NPC = GameObject.Find("NPC");
+        NPC = GameObject.Find("PNJ");
 
         TLH = NPC.GetComponent<TrafficLightsHandler>();
 
@@ -52,7 +54,7 @@ public class MoveTo : MonoBehaviour
         if (TLH.GetLight() == false)
         {
 
-            if(gameObject.transform.position.x < 2.5 && gameObject.transform.position.x > -2.5)
+            if(gameObject.transform.position.x < -14 && gameObject.transform.position.x > -24)
             {
                 //il est sur la route
                 agent.isStopped = false;
@@ -78,10 +80,14 @@ public class MoveTo : MonoBehaviour
         }
 
 
-
-
-
-        float PNJVelocity = Mathf.Abs(oldTransX - this.transform.position.x) + Mathf.Abs(oldTransY - this.transform.position.y);
+        if (agent.isStopped == true)
+        {
+            PNJVelocity = 0;
+        }
+        else
+        {
+            PNJVelocity = 1;
+        }
         Debug.Log(PNJVelocity);
         animator.SetFloat("speed", PNJVelocity);
 

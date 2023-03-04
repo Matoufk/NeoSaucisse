@@ -16,7 +16,6 @@ public class pedestrianLightChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("updating");
         postProcessVolume = GetComponent<PostProcessVolume>();
         Bloom bloom = postProcessVolume.profile.GetSetting<UnityEngine.Rendering.PostProcessing.Bloom>();
         var colorParameter = new UnityEngine.Rendering.PostProcessing.ColorParameter();
