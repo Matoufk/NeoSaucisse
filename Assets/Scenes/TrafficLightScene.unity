@@ -172,6 +172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c1772357016a14ea047fdb3ef26206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 963194227}
+  spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!195 &45094933
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -353,6 +357,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c1772357016a14ea047fdb3ef26206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!195 &358493487
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -503,6 +511,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c1772357016a14ea047fdb3ef26206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!195 &370779013
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -684,6 +696,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c1772357016a14ea047fdb3ef26206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!195 &539225016
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1020,7 +1036,7 @@ GameObject:
   - component: {fileID: 752336580}
   - component: {fileID: 752336579}
   m_Layer: 0
-  m_Name: NPC
+  m_Name: PNJ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1206,6 +1222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c1772357016a14ea047fdb3ef26206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!195 &886622689
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1532,6 +1552,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c1772357016a14ea047fdb3ef26206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!195 &1106448138
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1682,6 +1706,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c1772357016a14ea047fdb3ef26206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!195 &1330320990
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1832,6 +1860,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c1772357016a14ea047fdb3ef26206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!195 &1888105919
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2065,6 +2097,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c1772357016a14ea047fdb3ef26206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!195 &2134620935
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2181,6 +2217,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 1791011348617953465, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
+      propertyPath: NPC
+      value: 
+      objectReference: {fileID: 752336578}
     - target: {fileID: 1791011348617953465, guid: 08a273e23bec18042b8b1444f267278b, type: 3}
       propertyPath: pedSymbolRedMat
       value: 
