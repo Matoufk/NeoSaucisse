@@ -13,7 +13,7 @@ public class TrafficLightsHandler : MonoBehaviour
         if( Random.value < 0.001 )
         {
             green = !green;
-            Debug.Log(green);
+            //Debug.Log(green);
         }
     }
 

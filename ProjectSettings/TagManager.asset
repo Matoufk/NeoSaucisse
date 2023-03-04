@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - pedestrianLight
+  - PedestrianSymbol
+  - NPC
+  - InteractUI
+  - Eau
+  - Fleur
+  - Regle
+  - Colle
+  - Affiche
   layers:
   - Default
   - TransparentFX

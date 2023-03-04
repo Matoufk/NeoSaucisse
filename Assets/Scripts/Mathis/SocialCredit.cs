@@ -44,4 +44,9 @@ public class SocialCredit : MonoBehaviour
         socialCredit = credit;
         creditText.text = socialCredit.ToString();
     }
+
+    public int GetSocialCredit()
+    {
+        return socialCredit;
+    }
 }

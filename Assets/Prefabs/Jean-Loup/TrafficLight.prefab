@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 6227130366779071842}
   m_Layer: 6
   m_Name: PedestrianSymbol
-  m_TagString: Untagged
+  m_TagString: PedestrianSymbol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

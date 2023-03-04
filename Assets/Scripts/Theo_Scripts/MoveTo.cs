@@ -14,13 +14,21 @@ public class MoveTo : MonoBehaviour
     private TrafficLightsHandler TLH;
 
     private float InitSpeed;
+    private float oldTransX = 0;
+    private float oldTransY = 0;
 
+    public Camera cam;
+    public SpriteRenderer spriteRenderer;
+    public Rigidbody rb;
+    public Animator animator;
+    private float PNJVelocity = 0;
 
     void Start()
     {
+        Debug.Log("Start");
         agent = GetComponent<NavMeshAgent>();
 
-        NPC = GameObject.Find("NPC");
+        NPC = GameObject.Find("PNJ");
 
         TLH = NPC.GetComponent<TrafficLightsHandler>();
 
@@ -46,7 +54,7 @@ public class MoveTo : MonoBehaviour
         if (TLH.GetLight() == false)
         {
 
-            if(gameObject.transform.position.x < 2.5 && gameObject.transform.position.x > -2.5)
+            if(gameObject.transform.position.x < -14 && gameObject.transform.position.x > -24)
             {
                 //il est sur la route
                 agent.isStopped = false;
@@ -57,17 +65,40 @@ public class MoveTo : MonoBehaviour
                 agent.isStopped = true;
                 agent.speed = InitSpeed;
             }
-
-             
-               
+    
             
         }
+        this.transform.LookAt(cam.transform);
+
+        if (oldTransX > this.transform.position.x)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (oldTransX < this.transform.position.x)
+        {
+            spriteRenderer.flipX = true;
+        }
+
+
+        if (agent.isStopped == true)
+        {
+            PNJVelocity = 0;
+        }
+        else
+        {
+            PNJVelocity = 1;
+        }
+        Debug.Log(PNJVelocity);
+        animator.SetFloat("speed", PNJVelocity);
+
+        oldTransX = this.transform.position.x;
+        oldTransY = this.transform.position.y;
     }
 
 
     private GameObject GiveNewDestination()
     {
-        if(transform.position.x < 0)
+        if(transform.position.x < -19)
         {
             float val = Random.value;
             if(val < 0.3)
@@ -99,9 +130,10 @@ public class MoveTo : MonoBehaviour
                 return GameObject.Find("Zone (3)");
             }
         }
-
+        
 
     }
+    
 
 
 }
