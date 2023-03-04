@@ -1,13 +1,23 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
 
     public bool isInRange = false;
+
+    private TextMeshProUGUI interactUI;
+
+    private void Awake()
+    {
+        interactUI = GameObject.FindGameObjectWithTag("InteractUI").GetComponent<TextMeshProUGUI>();
+    }
+
     private void Update()
     {
-        if (isInRange && Input.GetKeyDown(KeyCode.Mouse0))
+        if (isInRange && Input.GetKeyDown(KeyCode.E))
         {
             TriggerDialogue();
         }
@@ -17,7 +27,7 @@ public class DialogueTrigger : MonoBehaviour
         if(collider.gameObject.tag == "Player")
         {
             isInRange = true;
-            Debug.Log("Collision");
+            interactUI.enabled = true;
         }
     }
     private void OnTriggerExit(Collider collider)
@@ -25,12 +35,12 @@ public class DialogueTrigger : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             isInRange = false;
-            Debug.Log("No Collision");
+            interactUI.enabled = false;
         }
     }
 
     void TriggerDialogue()
     {
-
+        DialogueManager.instance.StartDialogue(dialogue);
     }
 }
