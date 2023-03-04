@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 557.875, y: -148.6153}
+  m_AnchoredPosition: {x: 675.23, y: -80}
   m_SizeDelta: {x: 173.5175, y: 43.8651}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5085120229270067965
@@ -275,8 +275,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -258}
-  m_SizeDelta: {x: -611.1649, y: -602.2579}
+  m_AnchoredPosition: {x: 47.560905, y: -311.83682}
+  m_SizeDelta: {x: -197.6755, y: -709.9316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5085120229977380847
 CanvasRenderer:
@@ -641,8 +641,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.37, y: 5.9703}
-  m_SizeDelta: {x: 1109.4989, y: 204.0547}
+  m_AnchoredPosition: {x: 34, y: -20}
+  m_SizeDelta: {x: 1455.9828, y: 140.2911}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5085120231096095854
 CanvasRenderer:
@@ -672,11 +672,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum
+  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum
     sem et lacus mattis tincidunt. Suspendisse in laoreet turpis. In volutpat vestibulum
-    dolor quis malesuada. In fringilla tempus nunc, eget condimentum purus consectetur
-    id. Nulla ultrices eros vitae sapien volutpat rhoncus. Aenean risus enim, mollis
-    semper convallis condimentum, iaculi
+    dolor quis malesuada. In fringilla tempus nunc, eget condimentum purus '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -780,7 +778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000018835, y: 139}
+  m_AnchoredPosition: {x: -183, y: 86.377}
   m_SizeDelta: {x: 1220.7, y: 43.2414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5085120231124436515
