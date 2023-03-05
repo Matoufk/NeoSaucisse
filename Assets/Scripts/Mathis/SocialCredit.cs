@@ -25,6 +25,8 @@ public class SocialCredit : MonoBehaviour
     private bool hasPrayed = false;
     private bool enteredCrossingZone = false;
 
+    public Animator animator;
+
     private void Start()
     {
         creditText.material.color = couleur;
@@ -50,8 +52,13 @@ public class SocialCredit : MonoBehaviour
             if (praying == true)
             {
                 hasPrayed = true;
+                animator.SetBool("pray", true);
+              
+                
             }
+            animator.SetBool("pray", false);
         }
+        
         else if (x > -5 && x < 3 && z > -2 && z < 18)
         {
             enteredPrayingZone = true;
