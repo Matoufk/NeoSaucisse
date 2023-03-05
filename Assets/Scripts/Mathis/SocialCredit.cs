@@ -19,6 +19,9 @@ public class SocialCredit : MonoBehaviour
     private GameObject NPC;
     private TrafficLightsHandler TLH;
 
+    private GameObject PSGain;
+    private ParticleSystem PSLoss;
+
     private float x;
     private float z;
 
@@ -37,6 +40,9 @@ public class SocialCredit : MonoBehaviour
 
         NPC = GameObject.Find("PNJ");
         TLH = NPC.GetComponent<TrafficLightsHandler>();
+
+        PSGain = GameObject.Find("ParticleSystemGain");
+        PSLoss = (GameObject.Find("ParticleSystemLoss")).GetComponent<ParticleSystem>();
     }
     private void Update()
     {
@@ -69,12 +75,14 @@ public class SocialCredit : MonoBehaviour
             if (enteredPrayingZone = false && hasPrayed == true)
             {
                 SetSocialCredit(GetSocialCredit() + 15);
-                
+                PSGain.GetComponent<ParticleSystem>().Stop();
+                if(!PSGain.GetComponent<ParticleSystem>().isPlaying) PSGain.GetComponent<ParticleSystem>().Play();
             }
             else if (enteredPrayingZone = true && hasPrayed == false)
             {
                 SetSocialCredit(GetSocialCredit() - 10);
                 enteredPrayingZone = false;
+                PSLoss.Play();
             }
         }
         else
@@ -103,6 +111,7 @@ public class SocialCredit : MonoBehaviour
                 //il est sur la route
                 enteredCrossingZone = true;
                 SetSocialCredit(GetSocialCredit() - 5);
+                PSLoss.Play();
             }
         }
         if (x > -14 || x < -24)
