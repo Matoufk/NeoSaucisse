@@ -27,10 +27,12 @@ public class ObjectTrigger : MonoBehaviour
     {
         if(collider.gameObject.tag == "Player")
         {
+            Debug.Log("Triggered");
             isInRange = true;
             interactUI.enabled = true;
         }
     }
+
     private void OnTriggerExit(Collider collider)
     {
         if (collider.gameObject.tag == "Player")
