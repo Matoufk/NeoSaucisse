@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShowInventory : MonoBehaviour
 {
 
     
     public Inventory inventory;
-    public SpriteRenderer waterSprite;
-    public SpriteRenderer GlueSprite;
-    public SpriteRenderer RuleSprite;
+    public GameObject waterSprite;
+    public GameObject GlueSprite;
+    public GameObject RuleSprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,27 +22,27 @@ public class ShowInventory : MonoBehaviour
     {
         if(inventory.Eau == true)
         {
-            waterSprite.enabled = true;
+            waterSprite.GetComponent<RawImage>().enabled = true;
         }
         if (inventory.Colle == true)
         {
-            GlueSprite.enabled = true;
+            GlueSprite.GetComponent<RawImage>().enabled = true;
         }
         if (inventory.Regle == true)
         {
-            RuleSprite.enabled = true;
+            RuleSprite.GetComponent<RawImage>().enabled = true;
         }
         if (inventory.Eau == false)
         {
-            waterSprite.enabled = false;
+            waterSprite.GetComponent<RawImage>().enabled = false;
         }
         if (inventory.Colle == false)
         {
-            GlueSprite.enabled = false;
+            GlueSprite.GetComponent<RawImage>().enabled = false;
         }
         if (inventory.Regle == false)
         {
-            RuleSprite.enabled = false;
+            RuleSprite.GetComponent<RawImage>().enabled = false;
         }
     }
 }
