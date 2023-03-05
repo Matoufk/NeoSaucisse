@@ -11,9 +11,12 @@ public class ObjectTrigger : MonoBehaviour
 
     public Inventory inventaire;
 
+    private SocialCredit SocialCredit;
+    
     private void Awake()
     {
         interactUI = GameObject.FindGameObjectWithTag("InteractUI").GetComponent<TextMeshProUGUI>();
+        SocialCredit = GameObject.Find("PP").GetComponent<SocialCredit>();
     }
 
     private void Update()
@@ -27,10 +30,12 @@ public class ObjectTrigger : MonoBehaviour
     {
         if(collider.gameObject.tag == "Player")
         {
+            Debug.Log("Triggered");
             isInRange = true;
             interactUI.enabled = true;
         }
     }
+
     private void OnTriggerExit(Collider collider)
     {
         if (collider.gameObject.tag == "Player")
@@ -42,22 +47,23 @@ public class ObjectTrigger : MonoBehaviour
 
     void Interact()
     {
-        if(this.CompareTag("Eau") == true)
+        if(this.CompareTag("Eau") == true && SocialCredit.GetSocialCredit() >= 60)
         {
             inventaire.Eau = true;
-        } else if(this.CompareTag("Fleur") == true)
+
+        } else if(this.CompareTag("Fleur") == true && SocialCredit.GetSocialCredit() <= 0)
         {
             inventaire.Fleur = true;
         }
-        else if (this.CompareTag("Regle") == true)
+        else if (this.CompareTag("Regle") == true && SocialCredit.GetSocialCredit() >= 60)
         {
             inventaire.Regle = true;
         }
-        else if (this.CompareTag("Colle") == true)
+        else if (this.CompareTag("Colle") == true && SocialCredit.GetSocialCredit() >= 70)
         {
             inventaire.Colle = true;
         }
-        else if (this.CompareTag("Affiche") == true)
+        else if (this.CompareTag("Affiche") == true && SocialCredit.GetSocialCredit() <= 55)
         {
             inventaire.Affiche = true;
         }
