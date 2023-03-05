@@ -11449,13 +11449,47 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1336096523}
     - target: {fileID: 1045390590376582325, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 897213937}
+    - target: {fileID: 1045390590376582325, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
       propertyPath: dialogue.image
       value: 
       objectReference: {fileID: 1336096522}
+    - target: {fileID: 1045390590376582325, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045390590376582325, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Eris : \u201CSalut, \xE7a va ?\u201D\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045390590376582325, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "D\xE9class\xE9e : \u201CBonjour, je suis ravie que tu sois venu me
+        voir. D\u2019habitude, personne ne se met assez \xE0 ma place pour me comprendre.\u201D\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045390590376582325, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "Eris : \u201CJe peux faire quelque chose pour t\u2019aider ?\u201D\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045390590376582325, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "D\xE9class\xE9e : \u201CDe l\u2019eau, j\u2019ai besoin de boire.\u201D\r\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045390590376582325, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "Eris : \u201CBien s\xFBr, sers toi dans ma bouteille. Prends tout ce
+        que tu veux !\u201D\r\n\n\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 2742318719185132817, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
       propertyPath: m_Name
       value: PNJInteraction
       objectReference: {fileID: 0}
+    - target: {fileID: 2750137724693095476, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 27c70ed8d2ac34d45a41aecbb9fb0973, type: 3}
     - target: {fileID: 4343990052198615546, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -11506,6 +11540,11 @@ PrefabInstance:
       objectReference: {fileID: 1336096524}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+--- !u!82 &897213937 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2750137724693095476, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+  m_PrefabInstance: {fileID: 897213936}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &902283834
 Mesh:
   m_ObjectHideFlags: 0

@@ -13329,6 +13329,10 @@ PrefabInstance:
       value: "Eris : \u201CMerci ! J\u2019ouvre enfin les yeux sur toutes ces r\xE8gles
         absurdes!\u201D\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 8807288740865204770, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 87222a44727c8b64abe23b9bb5c0061e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9206a1a1f06dfb04cb69d9656431f2a1, type: 3}
 --- !u!1 &938013931 stripped
