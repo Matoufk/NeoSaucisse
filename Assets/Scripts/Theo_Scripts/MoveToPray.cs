@@ -95,8 +95,8 @@ public class MoveToPray : MonoBehaviour
         {
             PNJVelocity = 1;
         }
-        Debug.Log(PNJVelocity);
-        animator.SetFloat("speed", PNJVelocity);
+        
+        animator.SetBool("pray", praying);
 
         oldTransX = this.transform.position.x;
         oldTransY = this.transform.position.y;

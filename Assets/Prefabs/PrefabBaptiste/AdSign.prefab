@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3836944431398929666}
   - component: {fileID: 3836944431398929667}
   - component: {fileID: 3836944431398929664}
+  - component: {fileID: 6726363249411278481}
+  - component: {fileID: 2850438455243171106}
   m_Layer: 0
   m_Name: AdSign
   m_TagString: Untagged
@@ -344,3 +346,30 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &6726363249411278481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3836944431398929665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.7770467, y: 12.667844, z: 5.6644564}
+  m_Center: {x: 3.8885233, y: 6.3339376, z: 2.4635224}
+--- !u!114 &2850438455243171106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3836944431398929665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d4e16dbacaf34c428c84fd812c3f8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInRange: 0
+  inventaire: {fileID: 0}

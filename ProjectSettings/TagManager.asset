@@ -13,6 +13,7 @@ TagManager:
   - Regle
   - Colle
   - Affiche
+  - PrayingUI
   layers:
   - Default
   - TransparentFX
