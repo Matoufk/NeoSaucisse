@@ -26,7 +26,7 @@ public class MoveToPray : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Start");
+        //Debug.Log("Start");
         agent = GetComponent<NavMeshAgent>();
 
         InitSpeed = agent.speed;
@@ -49,7 +49,7 @@ public class MoveToPray : MonoBehaviour
 
             if (x > -5 && x < 3 && z > -2 && z < 10 && praying == false)
             {
-                // Zone de prières
+                // Zone de priï¿½res
                 praying = true;
                 agent.isStopped = true;
 
@@ -95,7 +95,7 @@ public class MoveToPray : MonoBehaviour
         {
             PNJVelocity = 1;
         }
-        Debug.Log(PNJVelocity);
+        //Debug.Log(PNJVelocity);
         animator.SetFloat("speed", PNJVelocity);
 
         oldTransX = this.transform.position.x;
