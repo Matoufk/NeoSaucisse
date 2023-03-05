@@ -56,9 +56,6 @@ public class SocialCredit : MonoBehaviour
             {
                 hasPrayed = true;
                 animator.SetBool("pray", true);
-
-
-
             }
 
         }
@@ -89,6 +86,7 @@ public class SocialCredit : MonoBehaviour
         {
             animator.SetBool("pray", false);
             praying = false;
+            hasPrayed = false;
 
         }
 
@@ -107,7 +105,7 @@ public class SocialCredit : MonoBehaviour
                 SetSocialCredit(GetSocialCredit() - 5);
             }
         }
-        else if (gameObject.transform.position.x > -14 || gameObject.transform.position.x < -24)
+        if (x > -14 || x < -24)
         {
             enteredCrossingZone = false;
         }
