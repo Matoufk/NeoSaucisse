@@ -28674,6 +28674,15 @@ PrefabInstance:
       propertyPath: dialogue.image
       value: 
       objectReference: {fileID: 1114109540}
+    - target: {fileID: 5280161589012651576, guid: 1d9b269e0d3b14c43b7c73bbcd2319d0, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Je suis la nuit, je suis l'ombre, dur est mon v\xE9cu sombre est mon
+        avenir..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280161589012651576, guid: 1d9b269e0d3b14c43b7c73bbcd2319d0, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Okamari no suzuki...
+      objectReference: {fileID: 0}
     - target: {fileID: 7490452414568136330, guid: 1d9b269e0d3b14c43b7c73bbcd2319d0, type: 3}
       propertyPath: m_RootOrder
       value: 18
