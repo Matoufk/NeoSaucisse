@@ -14970,6 +14970,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5085120229977380840, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5085120229977380841, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_SizeDelta.y
       value: -813.9229
@@ -14988,19 +14992,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5085120230868690037, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_fontColor.b
-      value: 1
+      value: 0.754717
       objectReference: {fileID: 0}
     - target: {fileID: 5085120230868690037, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_fontColor.g
-      value: 0.14433026
+      value: 0.754717
       objectReference: {fileID: 0}
     - target: {fileID: 5085120230868690037, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_fontColor.r
-      value: 0
+      value: 0.754717
       objectReference: {fileID: 0}
     - target: {fileID: 5085120230868690037, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4294911232
+      value: 4290822336
       objectReference: {fileID: 0}
     - target: {fileID: 5085120230868690038, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -15008,7 +15012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5085120230868690038, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000019073
+      value: 92.49998
       objectReference: {fileID: 0}
     - target: {fileID: 6061048797928765310, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_Name
@@ -15062,6 +15066,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7684915065370298690, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000052652
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684915065370298690, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 92.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8219333171027035382, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -15097,6 +15109,34 @@ PrefabInstance:
     - target: {fileID: 8846817751728900124, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_text
       value: Press F to pray
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846817751728900124, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846817751728900124, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.8679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846817751728900124, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.8679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846817751728900124, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.8679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846817751728900124, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_characterSpacing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846817751728900124, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4292730333
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846817751728900124, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_overrideHtmlColors
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
@@ -25303,6 +25343,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1480214670}
+    - target: {fileID: 6697119707734450105, guid: ae17d67a19930cd4f8a652f92b2cc468, type: 3}
+      propertyPath: posOffset.y
+      value: 1.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697119707734450105, guid: ae17d67a19930cd4f8a652f92b2cc468, type: 3}
+      propertyPath: posOffset.z
+      value: -10.6
+      objectReference: {fileID: 0}
     - target: {fileID: 6697119707734450109, guid: ae17d67a19930cd4f8a652f92b2cc468, type: 3}
       propertyPath: m_Name
       value: Main Camera
