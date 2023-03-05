@@ -20034,10 +20034,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 281073749786843502, guid: f61e68720050c184a9e5f5317a8869df, type: 3}
-      propertyPath: seuil
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 281073749786843502, guid: f61e68720050c184a9e5f5317a8869df, type: 3}
       propertyPath: socialCredit
       value: 
       objectReference: {fileID: 1480214671}
@@ -22361,6 +22357,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1480214670}
+    - target: {fileID: 6697119707734450105, guid: ae17d67a19930cd4f8a652f92b2cc468, type: 3}
+      propertyPath: posOffset.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697119707734450105, guid: ae17d67a19930cd4f8a652f92b2cc468, type: 3}
+      propertyPath: posOffset.z
+      value: -10
+      objectReference: {fileID: 0}
     - target: {fileID: 6697119707734450109, guid: ae17d67a19930cd4f8a652f92b2cc468, type: 3}
       propertyPath: m_Name
       value: Main Camera

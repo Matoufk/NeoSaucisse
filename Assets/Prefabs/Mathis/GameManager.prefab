@@ -82,4 +82,4 @@ MonoBehaviour:
   level2: MainScene2
   level3: MainScene3
   socialCredit: {fileID: 0}
-  seuil: 50
+  seuil: 0
