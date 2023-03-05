@@ -77,11 +77,11 @@ public class MoveToPray : MonoBehaviour
 
         this.transform.LookAt(cam.transform);
 
-        if (oldTransX > this.transform.position.x + 0.04)
+        if (oldTransX > this.transform.position.x + 0.02)
         {
             spriteRenderer.flipX = false;
         }
-        else if (oldTransX < this.transform.position.x - 0.04)
+        else if (oldTransX < this.transform.position.x - 0.02)
         {
             spriteRenderer.flipX = true;
         }
@@ -97,6 +97,7 @@ public class MoveToPray : MonoBehaviour
         }
         
         animator.SetBool("pray", praying);
+        animator.SetFloat("speed", PNJVelocity);
 
         oldTransX = this.transform.position.x;
         oldTransY = this.transform.position.y;
