@@ -11,9 +11,12 @@ public class ObjectTrigger : MonoBehaviour
 
     public Inventory inventaire;
 
+    private SocialCredit SocialCredit;
+    
     private void Awake()
     {
         interactUI = GameObject.FindGameObjectWithTag("InteractUI").GetComponent<TextMeshProUGUI>();
+        SocialCredit = GameObject.Find("PP").GetComponent<SocialCredit>();
     }
 
     private void Update()
@@ -44,18 +47,19 @@ public class ObjectTrigger : MonoBehaviour
 
     void Interact()
     {
-        if(this.CompareTag("Eau") == true)
+        if(this.CompareTag("Eau") == true && SocialCredit.GetSocialCredit() >= 60)
         {
             inventaire.Eau = true;
+
         } else if(this.CompareTag("Fleur") == true)
         {
             inventaire.Fleur = true;
         }
-        else if (this.CompareTag("Regle") == true)
+        else if (this.CompareTag("Regle") == true && SocialCredit.GetSocialCredit() >= 70)
         {
             inventaire.Regle = true;
         }
-        else if (this.CompareTag("Colle") == true)
+        else if (this.CompareTag("Colle") == true && SocialCredit.GetSocialCredit() >= 70)
         {
             inventaire.Colle = true;
         }
