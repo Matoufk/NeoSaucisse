@@ -25,7 +25,7 @@ public class SwappingScene : MonoBehaviour
             }
 
         }
-          else if (socialCredit.socialCredit <=seuil)
+          else if (socialCredit.socialCredit <=50)
         {
             if (SceneManager.GetActiveScene().name != level2)
             {
