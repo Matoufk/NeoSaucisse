@@ -9,7 +9,14 @@ public class PrayingTrigger : MonoBehaviour
 
     private TextMeshProUGUI prayingUI;
 
-    public SocialCredit socialCredit;
+    private SocialCredit socialCredit;
+    private GameObject PP;
+
+    public void Start()
+    {
+        PP = GameObject.Find("PP");
+        socialCredit = PP.GetComponent<SocialCredit>();
+    }
 
     private void Awake()
     {
