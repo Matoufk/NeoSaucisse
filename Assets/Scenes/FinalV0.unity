@@ -13115,14 +13115,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5114194371294712584, guid: 5375124beab42d645a06ab594662dbb0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 140e05d93ba32214c8b97e8091d900e9, type: 2}
     - target: {fileID: 5114194371294712597, guid: 5375124beab42d645a06ab594662dbb0, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 378304105}
+    - target: {fileID: 5114194371450192292, guid: 5375124beab42d645a06ab594662dbb0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 140e05d93ba32214c8b97e8091d900e9, type: 2}
     - target: {fileID: 5114194371450192305, guid: 5375124beab42d645a06ab594662dbb0, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 378304105}
+    - target: {fileID: 5114194372037648647, guid: 5375124beab42d645a06ab594662dbb0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 140e05d93ba32214c8b97e8091d900e9, type: 2}
     - target: {fileID: 5114194372037648671, guid: 5375124beab42d645a06ab594662dbb0, type: 3}
       propertyPath: cam
       value: 
@@ -13131,6 +13143,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 378304105}
+    - target: {fileID: 5114194372324727542, guid: 5375124beab42d645a06ab594662dbb0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 140e05d93ba32214c8b97e8091d900e9, type: 2}
     - target: {fileID: 7320101167523187312, guid: 5375124beab42d645a06ab594662dbb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.6
@@ -26744,7 +26760,7 @@ PrefabInstance:
       objectReference: {fileID: 1480214670}
     - target: {fileID: 6697119707734450105, guid: ae17d67a19930cd4f8a652f92b2cc468, type: 3}
       propertyPath: posOffset.y
-      value: 1.34
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 6697119707734450105, guid: ae17d67a19930cd4f8a652f92b2cc468, type: 3}
       propertyPath: posOffset.z

@@ -70,11 +70,11 @@ public class MoveTo : MonoBehaviour
         }
         this.transform.LookAt(cam.transform);
 
-        if (oldTransX > this.transform.position.x + 0.02)
+        if (oldTransX > this.transform.position.x + 0.04)
         {
             spriteRenderer.flipX = false;
         }
-        else if (oldTransX < this.transform.position.x - 0.02)
+        else if (oldTransX < this.transform.position.x - 0.04)
         {
             spriteRenderer.flipX = true;
         }
