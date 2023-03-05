@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3836944431398929667}
   - component: {fileID: 3836944431398929664}
   - component: {fileID: 6726363249411278481}
-  - component: {fileID: 2850438455243171106}
+  - component: {fileID: 5454169672158407752}
   m_Layer: 0
   m_Name: AdSign
   m_TagString: Untagged
@@ -359,7 +359,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.7770467, y: 12.667844, z: 5.6644564}
   m_Center: {x: 3.8885233, y: 6.3339376, z: 2.4635224}
---- !u!114 &2850438455243171106
+--- !u!114 &5454169672158407752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -372,4 +372,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
-  inventaire: {fileID: 0}
+  socialCredit: {fileID: 0}
