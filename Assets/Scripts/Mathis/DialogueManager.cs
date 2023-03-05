@@ -28,7 +28,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         dialogueVar = dialogue;
-        dialogue.image.GetComponent<SpriteRenderer>().enabled = true;
+        dialogue.image.GetComponent<RawImage>().enabled = true;
         animator.SetBool("isOpen", true);
         nameText.text = dialogue.name;
         sentences.Clear();
@@ -66,7 +66,7 @@ public class DialogueManager : MonoBehaviour
     }
     void EndDialogue()
     {
-        dialogueVar.image.GetComponent<SpriteRenderer>().enabled = false;
+        dialogueVar.image.GetComponent<RawImage>().enabled = false;
         animator.SetBool("isOpen", false);
     }
 
