@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -35,13 +36,16 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayMusic();    
+        PlayMusic();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(aud.isPlaying == false)
+        {
+            PlayMusic2();
+        }
     }
 
     public void PlayMusic()
