@@ -10,6 +10,8 @@ public class DialogueTrigger : MonoBehaviour
 
     private TextMeshProUGUI interactUI;
 
+    public AudioSource audio;
+
     private void Awake()
     {
         interactUI = GameObject.FindGameObjectWithTag("InteractUI").GetComponent<TextMeshProUGUI>();
@@ -42,5 +44,6 @@ public class DialogueTrigger : MonoBehaviour
     void TriggerDialogue()
     {
         DialogueManager.instance.StartDialogue(dialogue);
+        audio.Play();
     }
 }
