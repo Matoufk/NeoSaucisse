@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        animator = GameObject.FindGameObjectWithTag("DialogueUI").GetComponent<Animator>();
         dialogueVar = dialogue;
         dialogue.image.GetComponent<RawImage>().enabled = true;
         animator.SetBool("isOpen", true);
