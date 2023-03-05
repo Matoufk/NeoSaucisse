@@ -15,12 +15,12 @@ public class DialogueManager : MonoBehaviour
     private Dialogue dialogueVar;
     private void Awake()
     {
-        // if (instance != null)
-        // {
-        //     Debug.LogWarning("Il y a plus d'uns instance de Dialogue Manager dans la sc�ne");
-        //     return;
-        // }
-        // instance = this;
+        if (instance != null)
+        {
+            Debug.LogWarning("Il y a plus d'uns instance de Dialogue Manager dans la sc�ne");
+             return;
+         }
+        instance = this;
         if (instance != null && instance != this)
         {
             Destroy(this.gameObject);
@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        animator = GameObject.FindGameObjectWithTag("DialogueUI").GetComponent<Animator>();
         dialogueVar = dialogue;
         dialogue.image.GetComponent<RawImage>().enabled = true;
         animator.SetBool("isOpen", true);

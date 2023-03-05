@@ -16,6 +16,7 @@ public class ObjectTrigger : MonoBehaviour
     private void Awake()
     {
         interactUI = GameObject.FindGameObjectWithTag("InteractUI").GetComponent<TextMeshProUGUI>();
+        inventaire = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Inventory>();
         SocialCredit = GameObject.Find("PP").GetComponent<SocialCredit>();
     }
 

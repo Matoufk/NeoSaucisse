@@ -10,12 +10,13 @@ public class SwappingScene : MonoBehaviour
     public int seuil = 50;
 
     // Update is called once per frame
-    private void Start()
+    private void Awake()
     {
-       
+        
     }
     void Update()
     {
+        socialCredit = GameObject.FindGameObjectWithTag("Player").GetComponent<SocialCredit>();
         if (socialCredit.socialCredit >= 101) 
         {
             if (SceneManager.GetActiveScene().name != level1)
@@ -25,7 +26,7 @@ public class SwappingScene : MonoBehaviour
             }
 
         }
-          else if (socialCredit.socialCredit <=seuil)
+          else if (socialCredit.socialCredit <=50 && socialCredit.socialCredit > 0)
         {
             if (SceneManager.GetActiveScene().name != level2)
             {

@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 4178866999203203239}
   - component: {fileID: 4178866999203203240}
   - component: {fileID: 5435371531427306163}
+  - component: {fileID: 4093441272314369126}
   m_Layer: 5
   m_Name: BaBaCanvas
   m_TagString: Untagged
@@ -270,6 +271,18 @@ MonoBehaviour:
   RuleSprite: {fileID: 1567948818161980537}
   AfficheSprite: {fileID: 424732972203553816}
   FleurSprite: {fileID: 8793456661708202511}
+--- !u!114 &4093441272314369126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4178866999203203241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b3a40d059e346547b673e09323ef181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7827524060585489588
 GameObject:
   m_ObjectHideFlags: 0

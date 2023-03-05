@@ -14,6 +14,8 @@ TagManager:
   - Colle
   - Affiche
   - PrayingUI
+  - DialogueUI
+  - GameManager
   layers:
   - Default
   - TransparentFX
