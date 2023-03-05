@@ -14784,6 +14784,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1316262579896974076, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407442056341971744, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1407442056341971744, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -14924,10 +14932,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.000019073
       objectReference: {fileID: 0}
-    - target: {fileID: 5619987059223692589, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6347721929413756724, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_Name
       value: PrayingUI
@@ -14936,9 +14940,9 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PrayingUI
       objectReference: {fileID: 0}
-    - target: {fileID: 6845887564770197211, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
-      propertyPath: m_Enabled
-      value: 0
+    - target: {fileID: 6590550835912980731, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8359180688605855767, guid: 165c9a9f30c789a4a85a01e7a8ed79e3, type: 3}
       propertyPath: m_Enabled
