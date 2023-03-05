@@ -269,6 +269,7 @@ MonoBehaviour:
   GlueSprite: {fileID: 8688188977633182550}
   RuleSprite: {fileID: 1567948818161980537}
   AfficheSprite: {fileID: 424732972203553816}
+  FleurSprite: {fileID: 8793456661708202511}
 --- !u!1 &7827524060585489588
 GameObject:
   m_ObjectHideFlags: 0
