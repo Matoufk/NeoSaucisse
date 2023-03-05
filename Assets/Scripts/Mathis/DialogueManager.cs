@@ -15,12 +15,21 @@ public class DialogueManager : MonoBehaviour
     private Dialogue dialogueVar;
     private void Awake()
     {
-        if (instance != null)
+        // if (instance != null)
+        // {
+        //     Debug.LogWarning("Il y a plus d'uns instance de Dialogue Manager dans la scï¿½ne");
+        //     return;
+        // }
+        // instance = this;
+        if (instance != null && instance != this)
         {
-            Debug.LogWarning("Il y a plus d'uns instance de Dialogue Manager dans la scène");
+            Destroy(this.gameObject);
             return;
         }
-        instance = this;
+        else
+        {
+            instance = this;
+        }
 
         sentences = new Queue<string>();
     }

@@ -78,6 +78,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18571d29c2c3ce945981edfca275dbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: 
+  level1: FinalV0
+  level2: MainScene2
+  level3: MainScene3
   socialCredit: {fileID: 0}
   seuil: 50
