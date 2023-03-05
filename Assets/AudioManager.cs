@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
         get { return instance; }
     }
 
-    public AudioSource aud;
+    private AudioSource aud;
     public AudioClip music;
     public AudioClip music2;
 
