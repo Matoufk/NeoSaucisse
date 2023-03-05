@@ -11,8 +11,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
 
     private Queue<string> sentences;
-
     public Animator animator;
+    private Dialogue dialogueVar;
     private void Awake()
     {
         if (instance != null)
@@ -27,6 +27,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        dialogueVar = dialogue;
+        dialogue.image.GetComponent<RawImage>().enabled = true;
         animator.SetBool("isOpen", true);
         nameText.text = dialogue.name;
         sentences.Clear();
@@ -64,6 +66,7 @@ public class DialogueManager : MonoBehaviour
     }
     void EndDialogue()
     {
+        dialogueVar.image.GetComponent<RawImage>().enabled = false;
         animator.SetBool("isOpen", false);
     }
 
