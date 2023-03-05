@@ -9,9 +9,12 @@ public class SocialCredit : MonoBehaviour
     public Camera mainCamera;
     public bool BREAK = false;
     private bool OVER = false;
-    Color couleur = new Vector4(0, 255, 0,0);
+    Color couleur = new Vector4(0, 255, 0, 0);
     private int green = 255;
     private int red = 0;
+
+    private float oldTransX = 0;
+    private float oldTransY = 0;
 
     private GameObject NPC;
     private TrafficLightsHandler TLH;
@@ -53,12 +56,13 @@ public class SocialCredit : MonoBehaviour
             {
                 hasPrayed = true;
                 animator.SetBool("pray", true);
-              
-                
+
+
+
             }
-            animator.SetBool("pray", false);
+
         }
-        
+
         else if (x > -5 && x < 3 && z > -2 && z < 18)
         {
             enteredPrayingZone = true;
@@ -68,6 +72,7 @@ public class SocialCredit : MonoBehaviour
             if (enteredPrayingZone = false && hasPrayed == true)
             {
                 SetSocialCredit(GetSocialCredit() + 15);
+                
             }
             else if (enteredPrayingZone = true && hasPrayed == false)
             {
@@ -79,8 +84,18 @@ public class SocialCredit : MonoBehaviour
         {
             enteredPrayingZone = false;
         }
+        // Si on bouge alors on quitte le praying mode
+        if ((oldTransX+ oldTransY) != (this.transform.position.x+ this.transform.position.y))
+        {
+            animator.SetBool("pray", false);
+            praying = false;
 
-        
+        }
+
+
+        oldTransX = this.transform.position.x;
+        oldTransY = this.transform.position.y;
+
 
         // traverser au rouge
         if (TLH.GetLight() == false)
@@ -102,7 +117,7 @@ public class SocialCredit : MonoBehaviour
         }
 
 
-        creditText.transform.LookAt(creditText.transform.position + mainCamera.transform.rotation * Vector3.back,mainCamera.transform.rotation * Vector3.up);
+        creditText.transform.LookAt(creditText.transform.position + mainCamera.transform.rotation * Vector3.back, mainCamera.transform.rotation * Vector3.up);
         creditText.GetComponent<RectTransform>().rotation = creditText.GetComponent<RectTransform>().rotation * Quaternion.Euler(0, 180, 0);
         SetSocialCredit(socialCredit);
         if (BREAK && !OVER)
