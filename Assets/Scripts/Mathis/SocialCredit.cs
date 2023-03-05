@@ -13,14 +13,88 @@ public class SocialCredit : MonoBehaviour
     private int green = 255;
     private int red = 0;
 
+    private GameObject NPC;
+    private TrafficLightsHandler TLH;
+
+    private float x;
+    private float z;
+
+    public bool praying = false;
+
+    private bool enteredPrayingZone = false;
+    private bool hasPrayed = false;
+    private bool enteredCrossingZone = false;
+
     private void Start()
     {
         creditText.material.color = couleur;
         SetSocialCredit(socialCredit);
 
+        NPC = GameObject.Find("PNJ");
+        TLH = NPC.GetComponent<TrafficLightsHandler>();
     }
     private void Update()
     {
+
+        x = gameObject.transform.position.x;
+        z = gameObject.transform.position.z;
+
+        // On vérifie si une loi est brisée
+
+        // praying
+        if (x > -5 && x < 3 && z > -2 && z < 10)
+        {
+            enteredPrayingZone = true;
+
+            // Le personnage est dans la zone de prières
+            if (praying == true)
+            {
+                hasPrayed = true;
+            }
+        }
+        else if (x > -5 && x < 3 && z > -2 && z < 18)
+        {
+            enteredPrayingZone = true;
+        }
+        else if (enteredPrayingZone != hasPrayed)
+        {
+            if (enteredPrayingZone = false && hasPrayed == true)
+            {
+                SetSocialCredit(GetSocialCredit() + 15);
+            }
+            else if (enteredPrayingZone = true && hasPrayed == false)
+            {
+                SetSocialCredit(GetSocialCredit() - 10);
+                enteredPrayingZone = false;
+            }
+        }
+        else
+        {
+            enteredPrayingZone = false;
+        }
+
+        
+
+        // traverser au rouge
+        if (TLH.GetLight() == false)
+        {
+            if (gameObject.transform.position.x < -14 && gameObject.transform.position.x > -24 && enteredCrossingZone == false)
+            {
+                //il est sur la route
+                enteredCrossingZone = true;
+                SetSocialCredit(GetSocialCredit() - 5);
+            }
+        }
+        else if (gameObject.transform.position.x > -14 || gameObject.transform.position.x < -24)
+        {
+            enteredCrossingZone = false;
+        }
+        else if (TLH.GetLight() == true)
+        {
+            enteredCrossingZone = false;
+        }
+
+
         creditText.transform.LookAt(creditText.transform.position + mainCamera.transform.rotation * Vector3.back,mainCamera.transform.rotation * Vector3.up);
         creditText.GetComponent<RectTransform>().rotation = creditText.GetComponent<RectTransform>().rotation * Quaternion.Euler(0, 180, 0);
         SetSocialCredit(socialCredit);
