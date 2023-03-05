@@ -18,13 +18,9 @@ public class PlayerMovements : MonoBehaviour
         Vector3 deplacement = new Vector3(0, 0, 0);
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         float depthMovement = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-        if (horizontalMovement > 0 && depthMovement > 0)
-        {
-           deplacement = new Vector3(horizontalMovement / 2, 0, depthMovement / 2);
-        } else
-        {
-            deplacement = new Vector3(horizontalMovement, 0, depthMovement);
-        }
+       
+        deplacement = new Vector3(horizontalMovement, 0, depthMovement);
+       
 
         Flip(rb.velocity.x);
         MovePlayer(deplacement);
