@@ -51,7 +51,7 @@ public class ObjectTrigger : MonoBehaviour
         {
             inventaire.Eau = true;
 
-        } else if(this.CompareTag("Fleur") == true)
+        } else if(this.CompareTag("Fleur") == true && SocialCredit.GetSocialCredit() <= 0)
         {
             inventaire.Fleur = true;
         }
@@ -63,7 +63,7 @@ public class ObjectTrigger : MonoBehaviour
         {
             inventaire.Colle = true;
         }
-        else if (this.CompareTag("Affiche") == true)
+        else if (this.CompareTag("Affiche") == true && SocialCredit.GetSocialCredit() <= 55)
         {
             inventaire.Affiche = true;
         }
