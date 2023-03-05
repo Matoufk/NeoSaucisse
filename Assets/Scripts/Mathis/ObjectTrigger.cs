@@ -55,7 +55,7 @@ public class ObjectTrigger : MonoBehaviour
         {
             inventaire.Fleur = true;
         }
-        else if (this.CompareTag("Regle") == true && SocialCredit.GetSocialCredit() >= 70)
+        else if (this.CompareTag("Regle") == true && SocialCredit.GetSocialCredit() >= 60)
         {
             inventaire.Regle = true;
         }
